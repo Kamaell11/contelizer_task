@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('text_processor/', include('text_processor.urls')),
+    path('pesel_validation/', include('pesel_validation.urls')),
 ]
