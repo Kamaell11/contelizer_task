@@ -12,4 +12,4 @@ def validate_pesel(request):
             pesel_info = {'valid': True, 'birth_date': f'{birth_day}-{birth_month}-{birth_year}', 'gender': gender}
         else:
             pesel_info = {'valid': False, 'error': 'Invalid PESEL number'}
-    return render(request, 'pesel_form.html', {'pesel_info': pesel_info})
+    return render(request, 'pesel_validation/pesel_form.html', {'pesel_info': pesel_info})

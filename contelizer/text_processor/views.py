@@ -19,5 +19,5 @@ def process_text(request):
             content = f.read().decode('utf-8')
             words = content.split()
             scrambled_text = ' '.join(scramble_word(word) for word in words)
-        return render(request, 'text_result.html', {'text': scrambled_text})
-    return render(request, 'upload.html')
+        return render(request, 'text_processor/text_result.html', {'text': scrambled_text})
+    return render(request, 'text_processor/upload.html')
