@@ -17,7 +17,7 @@
         {% if pesel_info.valid %}
             <p>✅ PESEL is valid!</p>
             <p>📅 Date of Birth: {{ pesel_info.birth_date }}</p>
-            <p>🧑 Płeć: {{ pesel_info.gender }}</p>
+            <p>🧑 Gender: {{ pesel_info.gender }}</p>
         {% else %}
             <p>❌ Error: {{ pesel_info.error }}</p>
         {% endif %}

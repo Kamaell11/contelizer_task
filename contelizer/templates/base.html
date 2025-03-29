@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Aplikacja Django{% endblock %}</title>
+    <title>{% block title %}Contelizer Django Application{% endblock %}</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
         a { display: block; margin: 10px; font-size: 20px; }
     </style>
 </head>
 <body>
-    <h1>{% block header %}Witaj w aplikacji Django{% endblock %}</h1>
+    <h1>{% block header %}Welcom to Django Contelizer recruitment app!{% endblock %}</h1>
     <nav>
-        <a href="{% url 'validate_pesel' %}">🔢 Sprawdź PESEL</a>
-        <a href="{% url 'process_text' %}">📄 Przetwórz tekst</a>
+        <a href="{% url 'validate_pesel' %}">🔢 Check PESEL</a>
+        <a href="{% url 'process_text' %}">📄 Process text</a>
     </nav>
     {% block content %}{% endblock %}
 </body>
